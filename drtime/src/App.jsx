@@ -1,9 +1,12 @@
 import { useState } from 'react'
 import Startsite from "./component/Startsite";
 import HomePage from './component/HomePage';
-import Header from './component/Header';
+// import Header from './component/Header';
 import Register from './component/Register';
 import Login from './component/Login';
+import MyCalendar from './component/MyCalendar';
+
+
 
 
 function App() {
@@ -30,7 +33,9 @@ function App() {
       <HomePage />
     </div>
 
-    <div>
+    <div  className='bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400  min-h-screen'>
+      <MyCalendar />
+
 
     </div>
 
