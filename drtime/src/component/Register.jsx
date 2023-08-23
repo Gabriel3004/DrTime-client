@@ -1,5 +1,7 @@
 import {HeaderBasic} from "./Header"
 
+
+
 export default function Register() {
     return (
         <>
@@ -12,6 +14,8 @@ export default function Register() {
             <div className="flex justify-center flex-col">
                 <form action="get">
                     <div id="my Form">
+
+
 
                         <div id="anrede" className="mb-6">
                             <h1 className="text-xl font-bold mb-4 flex justify-center">Anrede</h1>

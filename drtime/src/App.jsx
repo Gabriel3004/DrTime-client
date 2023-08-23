@@ -3,13 +3,12 @@ import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Startsite from "./component/Startsite";
 import HomePage from './component/HomePage';
-import Header from './component/Header';
 import Register from './component/Register';
 import Login from './component/Login';
+import MyCalendar from './component/MyCalendar';
 import Profil from './component/Profil';
-import EditProfil from './component/EditProfil';
-import ArtzSuchen from './component/ArtzSuchen';
 import ArtzProfil from './component/ArtzProfil';
+import EditProfil from './component/EditProfil';
 
 
 function App() {
@@ -17,31 +16,43 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
-    <div className="bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 pt-4 min-h-screen flex justify-center">
-    <Routes> 
-      
 
-        
-          <Route path="/"  element={<Startsite/>} />
-          <Route path="/login" element={<Login/>} />
-          <Route path="/register" element={<Register/>} />
-          <Route path="/home" element={<HomePage/>} />
-          <Route path="/profil" element={<Profil/>} />
-          <Route path="/edit" element={<EditProfil/>} />
-          <Route path="/search" element={<ArtzSuchen/>} />
-          <Route path="/profilDoc" element={<ArtzProfil/>} />
-
-
-          
-   
-      
-      
-    </Routes>
+    <div className="bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 min-h-screen flex justify-center items-center">
+      <Startsite />
     </div>
-    </BrowserRouter>
+
+    <div className='bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 min-h-screen '>
+      <Login />
+    </div> 
+
+    <div className='bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400  min-h-screen'>
+      <Register />
+    </div> 
+
+    <div className='bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400  min-h-screen'>
+      <HomePage />
+    </div>
+
+    <div  className='bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400  min-h-screen'>
+      <MyCalendar />
+    </div>
+
+    <div  className='bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400  min-h-screen'>
+      <Profil />
+    </div>
+
+    <div  className='bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400  min-h-screen'>
+      <ArtzProfil />
+    </div>
+
+    <div  className='bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400  min-h-screen'>
+      <EditProfil />
+    </div>
+
     </>
   )
 };
 
-export default App;
+
+export default App
+
