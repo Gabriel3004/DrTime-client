@@ -45,7 +45,7 @@ function AvailableHours({ selectedDate }) {
             {availableHours.map((hour, index) => (
               <button
                 key={index}
-                className="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-600 text-2xl
+                className="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-600 
                 rounded-full flex justify-center items-center text-white font-bold text-xl w-40 h-14 m-3"
               >
                 {hour}
