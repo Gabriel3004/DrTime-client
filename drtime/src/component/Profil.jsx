@@ -132,9 +132,7 @@ const updateProfil = async () => {
   
   return (
     <>
-      <div>
-        <Header />
-      </div>
+      
 {user&&
       <div className=" flex  items-center  flex-col ">
         <div className="mb-20 mt-5">

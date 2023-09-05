@@ -19,19 +19,19 @@ export default function MyTermine() {
           id="Hier die termine"
           className="flex flex-col items-center justify-center mt-10"
         >
-          <div>
+          <div className="mb-5">
             <h1 className="text-4xl text-purple-700  font-bold ">Termine</h1>
           </div>
           <div
             id="Weisse platz"
-            className="bg-white rounded-xl w-40 m-5 TerminList"
+            className=" rounded-xl flex justify-center items-center"
           >
-            <div className="flex flex-col justify-center">
+            <div className="flex flex-col items-center w-auto justify-center">
               {citasSeleccionadas.length > 0 ? (
                 citasSeleccionadas.map((cita, index) => (
                   <div
                     key={index}
-                    className="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-600 
+                    className="bg-gradient-to-r  from-blue-600 via-blue-700 to-blue-600 
                     rounded-xl flex justify-center items-center flex-col text-white font-bold  m-3"
                   >
                     <span className="mb-4 text-xl">HausArzt</span>
@@ -40,7 +40,7 @@ export default function MyTermine() {
                   </div>
                 ))
               ) : (
-                <p>Du hast noch keinen Termin </p>
+                <p className="text-4xl text-purple-700 w-60 font-bold">Du hast noch keinen Termin </p>
               )}
             </div>
           </div>
