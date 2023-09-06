@@ -32,7 +32,7 @@ export default function Profil({user}) {
     data.append("file",image)
     data.append("upload_preset", "unsigned_upload")
     data.append("cloud_name","dygtyitsh")
-    fetch("https://api.cloudinary.com/v1_1/dygtyitsh/image/upload",{
+    fetch("https://api.cloudinary.com/v1_1/dygtyitsh/image/upload",{  
       method:"post",
       body:data
 
@@ -105,6 +105,8 @@ const handleCityChange = (e) => {
 const handleInsuranceNumberChange = (e) => {
     setNewuser({...newUser,city: e.target.value});
 };
+
+
 
 
 //profilEdit
